@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEI - Contacto</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="icon" href="/Imágenes/favicom.png">
+
+</head>
+<body class="body_excepto_index">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="logo" src="/Imágenes/Logo.png" alt="Logo de CEI"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="conceptos.html">Conceptos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="cursos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cursos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="cursos.html">Catálogo</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Python</a></li>
+                      <li><a class="dropdown-item" href="#">C/C++</a></li>
+                      <li><a class="dropdown-item" href="#">C#</a></li>
+                      <li><a class="dropdown-item" href="#">Java</a></li>
+                      <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                      <li><a class="dropdown-item" href="#">Angular</a></li>
+                      <li><a class="dropdown-item" href="#">PHP</a></li>
+                      <li><a class="dropdown-item" href="#">HTML & CSS</a></li>
+                      <li><a class="dropdown-item" href="#">Kotlin</a></li>
+                      <li><a class="dropdown-item" href="#">Swift</a></li>
+                      <li><a class="dropdown-item" href="#">SQL</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contáctenos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main id="bloque_contacto">  
+      <form action="validar.html">
+        <fieldset>
+          <legend id="art1">Complete con sus datos y pronto nos comunicaremos</legend>
+          <div id="nombre">
+            <label for="nombre">Ingrese su Nombre y Apellido completo</label>
+            <input name="nombre" id="nombre_cuadro" type="text" placeholder="su nombre y apellido"  minlength="3" maxlength="50" required>
+          </div>
+          <div id="nac">
+            <label for="nac">Ingrese su Fecha de Nacimiento</label>
+            <input id="nac_cuadro" type="date" required>
+          </div>
+          <div id="prov">
+            <label form="provincia">Selecione donde vive</label>
+            <select name="provincia" id="prov_cuadro" required> 
+              <option value="" selected>seleccione una opción</option>
+              <option value="Caba">Capital Federal</option>
+              <option value="Buenos Aires" >Bs. As.</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Cordoba">Córdoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Rios">Entre Rios</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>                  <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquen">Neuquén</option>
+              <option value="Rio Negro">Rio Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Sgo. del Estero">Sgo. del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucuman">Tucumán</option>
+            </select>
+          </div>
+          <div id="mail">
+            <label for="mail">Ingrese su correo electrónico</label>
+            <input id="mail_cuadro" name="mail" type="email" placeholder="ejemplo@email.com" required>
+          </div>
+          <fieldset>
+            <legend id="art2">¿Cuál es el motivo de su contacto?</legend>
+            <div>
+              <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario" required></textarea>
+            </div>
+            <div class="boton">
+              <input class="btns enviar" type="submit" value="Enviar">
+              <input class="btns reset" type="reset" value="Limpiar">
+            </div>
+          </fieldset>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="footer_excepto_index">
+        Osman Herman WEB &copy; 2022
+    </footer>
+    <script src="/JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
