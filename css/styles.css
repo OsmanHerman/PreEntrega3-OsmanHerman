@@ -430,13 +430,24 @@
   text-align: justify; }
 
 /*PÁGINA NOSOTROS*/
-.nosotros {
-  color: white;
-  padding: 5%; }
-  .nosotros p {
-    font-size: 23px; }
-  .nosotros .centrado {
-    text-align: center; }
+@media screen and (min-width: 1024px) {
+  .nosotros {
+    color: white;
+    padding: 5%; }
+    .nosotros p {
+      font-size: 23px; }
+    .nosotros .centrado {
+      text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .nosotros {
+    color: white;
+    padding: 5%; }
+    .nosotros p {
+      font-size: 1em;
+      overflow: auto; }
+    .nosotros .centrado {
+      text-align: center; } }
 
 /*PÁGINA CURSOS*/
 .flexbox {

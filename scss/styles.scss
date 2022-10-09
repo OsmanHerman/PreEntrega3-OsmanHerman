@@ -532,10 +532,20 @@
 }
 
 /*PÁGINA NOSOTROS*/
-.nosotros{
-    color: white; padding: 5%;
-    p{font-size: 23px;}
-    .centrado{text-align: center;}
+
+@media screen and (min-width: 1024px){
+    .nosotros{
+        color: white; padding: 5%;
+        p{font-size: 23px;}
+        .centrado{text-align: center;}
+    }
+}
+@media screen and (max-width: 500px){
+    .nosotros{
+        color: white; padding: 5%;
+        p{font-size: 1em; overflow: auto;}
+        .centrado{text-align: center;}
+    }
 }
 
 

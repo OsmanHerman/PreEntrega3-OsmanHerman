@@ -13,5 +13,13 @@
   "dependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsmanHerman/PreEntrega3-OsmanHerman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OsmanHerman/PreEntrega3-OsmanHerman/issues"
+  },
+  "homepage": "https://github.com/OsmanHerman/PreEntrega3-OsmanHerman#readme"
 }
